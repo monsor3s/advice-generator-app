@@ -8,8 +8,10 @@ function App() {
   return (
     <section className="container">
       <div className="main-box">
-        <img className="main-button" src={ImgButton} alt="Logo Button" />
         <img className="main-division" src={DivisionDesk} alt="Division Desktop" />
+        <div className="main-button">
+          <img src={ImgButton} alt="Logo Button" />
+        </div>
       </div>
     </section>
   )
