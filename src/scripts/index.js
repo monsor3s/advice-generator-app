@@ -1,17 +1,23 @@
-const url = "https://api.adviceslip.com/advice";
-var id=0;
-var string='';
+const resDiv = document.querySelector("#advice-text")
+const resBtn = document.querySelector(".main-button");
 
-async function dice() {
-  fetch(url)
-  .then(res => res.json())
-  .then((data) => {
-    id=data.slip.id;
-    string=data.slip.advice;
-    document.querySelector(".main-box>#advice-id").textContent=`Advice #${id}`;
-    document.querySelector(".main-box>#advice-text").textContent=string;
-  })
-  document.querySelector(".main-button").addEventListener("click", dice());
+resBtn.addEventListener('click', () => {
+  getAdvice();
+})
+
+window.onload = () => {
+  getAdvice();
 }
 
-dice();
+function getAdvice() {
+  fetch('https://api.adviceslip.com/advice').then(response => 
+  {
+    return response.json();
+  }).then(adviceData => {
+    const Adviceobj = adviceData.slip;
+    resDiv.innerHTML = `${Adviceobj.advice}`;
+  }).catch(error => {
+    console.log(error);
+  });
+}
+

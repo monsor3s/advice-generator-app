@@ -11,12 +11,12 @@ function App() {
       <div className="main-box">
         <div className="main-card">
           <p id="advice-id">Advice 149</p>
-          <h1 id="advice-text"></h1>
+          <div id="advice-text"></div>
           <img className="main-division" src={DivisionDesk} alt="Division Desktop" />
         </div>
-        <div className="main-button">
+        <button className="main-button">
           <img src={ImgButton} alt="Logo Button" />
-        </div>
+        </button>
       </div>
     </section>
   )
