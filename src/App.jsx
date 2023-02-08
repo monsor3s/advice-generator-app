@@ -10,7 +10,7 @@ function App() {
     <section className="container">
       <div className="main-box">
         <div className="main-card">
-          <p id="advice-id">Advice 149</p>
+          <p id="advice-id"></p>
           <div id="advice-text"></div>
           <img className="main-division" src={DivisionDesk} alt="Division Desktop" />
         </div>
