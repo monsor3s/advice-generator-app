@@ -2,13 +2,14 @@ const resDiv = document.querySelector("#advice-text");
 const resId = document.querySelector("#advice-id");
 const resBtn = document.querySelector(".main-button");
 
-resBtn.addEventListener('click', () => {
-  getAdvice();
-})
 
-window.onload = () => {
-  getAdvice();
-}
+// window.onload = () => {
+//   getAdvice();
+// }
+
+useEffect(() => {
+  getAdvice()
+}, [])
 
 function getAdvice() {
   fetch('https://api.adviceslip.com/advice').then(response => 
@@ -23,3 +24,6 @@ function getAdvice() {
   });
 }
 
+resBtn.addEventListener('click', () => {
+  getAdvice();
+})
