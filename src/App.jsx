@@ -1,7 +1,8 @@
-import ImgButton from "../src/assets/icon-dice.svg"
+import { useEffect, useState } from "react"
+
+import Button from "../src/assets/icon-dice.svg"
 import pauseDesktop from "../src/assets/pattern-divider-desktop.svg"
 import pauseMobile from "../src/assets/pattern-divider-mobile.svg"
-import { useEffect, useState } from "react"
 
 import "../src/styles/components/app.sass"
 import "../src/styles/reset.sass"
@@ -35,7 +36,7 @@ function App() {
           </picture>
         </div>
         <button className="main-button" onClick={fetchAdvice}>
-          <img src={ImgButton} alt="Logo Button" />
+          <img src={Button} alt="Logo Button" />
         </button>
       </div>
     </section>
