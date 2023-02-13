@@ -1,5 +1,6 @@
 import ImgButton from "../src/assets/icon-dice.svg"
-import DivisionDesk from "../src/assets/pattern-divider-desktop.svg"
+import pauseDesktop from "../src/assets/pattern-divider-desktop.svg"
+import pauseMobile from "../src/assets/pattern-divider-mobile.svg"
 import { useEffect, useState } from "react"
 
 import "../src/styles/components/app.sass"
@@ -28,7 +29,10 @@ function App() {
         <div className="main-card">
           <p id="advice-id">Advice #{text.id}</p>
           <div id="advice-text">"{text.advice}"</div>
-          <img className="main-division" src={DivisionDesk} alt="Division Desktop" />
+          <picture>
+            <source media="(min-width: 768px)" srcSet={pauseDesktop}/>
+            <img className="main-division" src={pauseMobile} alt="Division Desktop" />
+          </picture>
         </div>
         <button className="main-button" onClick={fetchAdvice}>
           <img src={ImgButton} alt="Logo Button" />
