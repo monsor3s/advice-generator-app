@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 
 import "../src/styles/components/app.sass"
 import "../src/styles/reset.sass"
-import "../src/scripts/index.js"
+
 
 function App() {
   const [text, setText] = useState([])
