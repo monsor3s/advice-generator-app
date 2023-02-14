@@ -24,7 +24,7 @@ This is the solution to the challenge [Advice generator app](https://www.fronten
 ### 🖇 Links
 
 - [URL do desafio](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub)
-- [URL Solução](https://monsor3s.github.io/intro-section/)
+- [URL Solução](https://monsor3s.github.io/advice-generator-app/)
 
 ## ♻ How to Contribute
 ```bash
@@ -50,6 +50,7 @@ This is the solution to the challenge [Advice generator app](https://www.fronten
 - [Flexbox](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox)
 - [Design Responsive](https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Responsive_Design)
 - [SASS](https://sass-lang.com/) - For styles
+- [ViteJS](https://vitejs.dev/guide/)
 - [React](https://reactjs.org/)
 - [Advice Slip JSON API](https://api.adviceslip.com/)
 
